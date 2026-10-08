@@ -1,0 +1,162 @@
+body,
+#root {
+  width: 100%;
+  border: none;
+  background: #f3f4f6;
+}
+
+.page {
+  box-sizing: border-box;
+  min-height: 100svh;
+  padding: 48px 20px 72px;
+  color: #111827;
+}
+
+.page h1 {
+  margin: 0 0 28px;
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: #111827;
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: #111827;
+}
+
+.timer .timer-status {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #6b7280;
+}
+
+.timer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.timer-actions button {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.student-card {
+  margin: 0;
+  padding: 18px 18px 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+}
+
+.student-card h2 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid #f3f4f6;
+  font-size: 15px;
+  color: #111827;
+}
+
+.field span {
+  color: #6b7280;
+}
+
+.field strong {
+  font-weight: 600;
+}
+
+.field input {
+  width: 11rem;
+  max-width: 62%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font: inherit;
+  color: #111827;
+  background: #fff;
+}
+
+.field input:focus {
+  outline: 2px solid #dbeafe;
+  border-color: #2563eb;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.btn {
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f9fafb;
+}
+
+.btn.primary,
+.btn.like[aria-pressed='true'] {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 28px 16px 48px;
+  }
+
+  .page h1 {
+    font-size: 24px;
+  }
+}
