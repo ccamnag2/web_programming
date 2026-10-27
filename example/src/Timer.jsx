@@ -5,6 +5,15 @@ function Timer() {
   const [isRunning, setIsRunning] = useState(false)
 
   useEffect(() => {
+    // 이 Effect는 Timer가 화면에 붙고 사라지는지만 본다. 시간 증가는 담당하지 않는다.
+    console.log('Timer Mounted')
+
+    return () => {
+      console.log('Timer Unmounted')
+    }
+  }, [])
+
+  useEffect(() => {
     if (!isRunning) {
       return
     }
